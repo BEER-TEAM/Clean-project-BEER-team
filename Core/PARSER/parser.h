@@ -13,11 +13,12 @@ static const uint8_t doorLock_node_type = 0x03;
 static const uint8_t doorPanel_node_type = 0x04;
 
 //NODE ID!!!!
-static const uint8_t nodeNumber = 0x01; // node Temp and Humidity
-// static const uint8_t nodeNumber = 0x02; // node door state (task)
-// static const uint8_t nodeNumber = 0x03; // node smoke sensor
-// static const uint8_t nodeNumber = 0x04; // node door panel (LCD)
-#define NODE_ID ((doorPanel_node_type << 5) | (nodeNumber & 0x1F))
+static const uint8_t nodeNumber = 0x01;
+
+#define NODE_ID ((doorPanel_node_type << 5) | (nodeNumber & 0x1F))// for lcd panel
+//#define NODE_ID ((fireAlarm_node_type << 5) | (nodeNumber & 0x1F))// for smoke detector
+//#define NODE_ID ((tempHumid_node_type << 5) | (nodeNumber & 0x1F))// for env sensor
+//#define NODE_ID ((doorLock_node_type << 5) | (nodeNumber & 0x1F))// for door lock
 
 //TAGS
 static const uint8_t temperature_tag = 0x01;
