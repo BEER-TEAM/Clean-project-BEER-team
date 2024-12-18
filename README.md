@@ -2,12 +2,19 @@
 Repozytorium zawiera kod źródłowy przygotowany w ramach projektu "Inteligentny system ochrony dzieł sztuki" w ramach przedmiotu BIR przez zespół BEER Team.
 
 ## STM32
+
+### Uruchamianie projektu:
+1. Podłącz wszytskie węzły STM32 do zasilania
+2. Wyzwolenie alarmu pożarowego możliwe jest poprzez wciśnięcie przycisku na płytce stykowej
+3. Obserwuj przesyłane wartości na wyświetlaczu
+4. Koniec.
+
 ### Uruchamianie kodu:
 Nie zalecamy wgrywać zapewnionego kodu na płytki przekazane do analizy, gdyż klucze szyfrujące w niniejszym kodzie zostały zmienione, zatem wgranie niniejszego kodu pozwoli na uruchomienie urządzeń, jednakże bez możliwości dołączenia do sieci projektowej. W przypadku chęci uruchomienia niniejszego kodu zaleca się wykorzystanie dodatkowego modułu ewaluacyjnego niewchodzącego w skład sieci projektowej.
 
 Bezpieczeństwo projektu oparte jest o tajność kluczy zgodnie z [zasadą Kerckhoffsa](https://pl.wikipedia.org/wiki/Zasada_Kerckhoffsa) zatem nie będą one przekazane wprost w kodzie. Jest to jedyny element którego w przekazanym oprogramowaniu świadomie nie umieściliśmy.
 
-Uruchomienie projektu:
+Uruchomienie projektu od zera z kodem:
  1. Dostosuj odpowiedni plik app_template.c do danego STM32. Masz do wyboru:
     * Smoke detector - wykrywacz dymu (zamiast wykrywacza jest przycisk)
     * LCD Display - węzeł wyświetlający odpowiednie dane (klimatyczne i stan czujnika dymu)
