@@ -17,7 +17,7 @@ Uruchomienie projektu:
  3. Wybór trybu pracy za pomocą GUZIK zostało wyłączone w pliku main.h i nie powinno być włączane ponownie - ma zastosowanie tylko do celów dydaktycznych
  4. Zadbaj, aby klucze umieszczone w kodzie STM32 odpowiadały kluczom w projekcie w pythonie
 
-UWAGA! W wszytskich płytkach ustawione zostały option bytes Read Out Protection na wartość 0xBB. Ma to za zadanie chromić przed odczytem zawartości wsadu MCU. Aby możliwe było wgranie innego kodu niż umieszczony na MCU konieczne jest wykonanie nastęujących działań:
+UWAGA! W wszytskich płytkach ustawione zostały option bytes Read Out Protection na wartość 0xBB. Ma to za zadanie chronić przed odczytem zawartości wsadu MCU. Aby możliwe było wgranie innego kodu niż umieszczony na MCU konieczne jest wykonanie nastęujących działań:
  1. Uruchom aplikację STM32CubeProgrammer
  2. Podłącz się do STLinka płytki
  3. Nie przejmuj się jeśli otrzymasz błąd odczytu - to normalne
